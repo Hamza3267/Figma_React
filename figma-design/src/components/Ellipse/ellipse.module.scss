@@ -1,0 +1,29 @@
+.pic {
+  width: 248px;
+  height: 248px;
+  flex-shrink: 0;
+  margin: 58px 58px;
+  
+}
+.smallcircle {
+  margin: 103px 103px;
+  //     margin-left: 169px;
+  // margin-top: 203px;
+  width: 364px;
+  height: 364px;
+  flex-shrink: 0;
+  border-radius: 364px;
+  background: #fff;
+
+  box-shadow: 0px 4px 50px 0px rgba(120, 143, 156, 0.25);
+}
+.bigcircle {
+  margin-top: 100px;
+  margin-left: 66px;
+  width: 570px;
+  height: 570px;
+  flex-shrink: 0;
+  border-radius: 570px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(120, 143, 156, 0.25);
+}

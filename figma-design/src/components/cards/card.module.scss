@@ -1,0 +1,88 @@
+.cardflex {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  margin-left: 70px;
+}
+.border {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 322px;
+  height: 412px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 2px solid var(--Gray-6, #f2f2f2);
+  background: #fff;
+}
+.pic {
+  width: 198px;
+  height: 198px;
+  flex-shrink: 0;
+  margin: 32px 63px 20px 63px;
+}
+.txt {
+  margin: 20px 26px;
+  width: 290px;
+  color: var(--Gray-2, #4f4f4f);
+  text-align: center;
+  font-family: Google Sans;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  text-transform: uppercase;
+}
+.price {
+  margin: 20px 26px;
+  margin-top: -20px;
+  width: 270px;
+  color: #317189;
+  font-family: Google Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.button {
+  width: 180px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  text-align: center;
+font-family: Google Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+  border: 3px solid var(--1, #75CCEB);
+
+background-clip: text;
+color: #75CCEB;
+
+  &:focus{
+    background: linear-gradient(90deg, #75cceb 0%, #6fb4ff 100%);
+   color: #fff;
+  }
+}
+
+.viewbutton {
+  margin-left: -100px;
+  margin-top: 54px;
+  width: 134px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 2px solid var(--1, #75cceb);
+  background: #fff;
+  box-shadow: 0px 20px 40px 0px rgba(255, 255, 255, 0.15);
+  text-align: center;
+  font-family: Google Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  background: var(--1, linear-gradient(90deg, #75cceb 0%, #6fb4ff 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

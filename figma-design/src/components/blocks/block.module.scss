@@ -1,0 +1,138 @@
+$dotSize: 10px; 
+$dotSpacing: 8px; 
+
+
+.carousel {
+  //  position: relative;
+  overflow: hidden;
+
+  width: 600px;
+  margin-left: 220px;
+}
+.carouselItems {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon {
+  width: 569px;
+  height: 554px;
+  flex-shrink: 0;
+  margin-left: 30px;
+  margin-top: 93px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(120, 143, 156, 0.25);
+  .border {
+    border: 1px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    width: 150px;
+    margin-left: 37%;
+
+  }
+}
+.textflex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.flexitem {
+  display: flex;
+}
+.img {
+  width: 362px;
+  height: 362px;
+  margin: 50px 104px 142px 6px;
+ 
+}
+.ptextss {
+  color: #818181;
+  text-align: center;
+  font-family: Google Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  text-transform: uppercase;
+ 
+}
+.pprice{
+
+  color: #317189;
+font-family: Google Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+}
+.p {
+  color: #fff;
+  font-family: Google Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  border-radius: 0px 8px 8px 0px;
+  background: #8a93e5;
+  width: 97px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-top: 76px;
+}
+
+.prev {
+  width: 34px ;
+  height: 34px ;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+ 
+}
+.next {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  // font-size: 16px;
+
+}
+
+.arrows{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+.carousel {
+
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+
+    .dot {
+      width: $dotSize;
+      height: $dotSize;
+      background-color: #D7DBFF; 
+      border-radius: 50%;
+      margin: 0 $dotSpacing;
+
+      &.activeDot {
+        background-color: #97a2ff; 
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+}
