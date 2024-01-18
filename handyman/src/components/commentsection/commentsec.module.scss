@@ -1,0 +1,80 @@
+@import '../../pages/handyman/color.module.scss';
+@import '../../pages/handyman/fontsize.scss';
+
+.div {
+
+  width: 30vw;
+  height: 50px;
+  // border-radius: 61px;
+  padding: 0px 10px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  font-size: 10px;
+  opacity: 0.5px;
+  background: $Primary-color;
+
+  @media screen and (max-width: 435px) {
+    // width: 50vw !important;
+    height: 20px !important;
+    // padding: 50px 10px !important;
+    border-radius: 5px !important;
+    margin-top: 10px;
+     margin-left: 70%;
+  }
+  @media screen and (max-width: 400px) {
+    // width: 50vw !important;
+    height: 20px !important;
+    // padding: 50px 10px !important;
+    border-radius: 5px !important;
+    margin-top: 10px;
+     margin-left: 50%;
+  }
+
+  @media screen and (max-width: 770px) {
+    width: 150px;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 61px;
+  }
+}
+
+.divv {
+  width: 10vw;
+  height: 30px ;
+  border-radius: 40px;
+  font-size: 8px;
+  border: 2px solid;
+  border-color: $Tertiary-color !important;
+  background: $Primary-color;
+  // margin: 0 auto;
+  color: $Tertiary-color;
+  cursor: pointer;
+  @media screen and (max-width: 435px) {
+    width: 100px;
+    height: 20px !important;
+    border-radius: 10px;
+    margin-left: 100%;
+    font-size: 5px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 100px;
+    height: 20px !important;
+    border-radius: 10px;
+    margin-left: 80%;
+  }
+  @media screen and (max-width: 770px) {
+    width: 60px;
+    height: 25px;
+
+  }
+}
+.contain {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}

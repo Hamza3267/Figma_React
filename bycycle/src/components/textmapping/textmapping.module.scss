@@ -1,0 +1,43 @@
+@import "../../page/bycyclepage/color.module.scss";
+@import "../../page/bycyclepage/fontsize.scss";
+
+.p {
+  width: 335px;
+  height: 12px;
+  @include fonth2;
+  font-weight: 500;
+    line-height: 1px;
+  color: $Primary-color;
+  @media screen and (max-width:330px) {
+    width: 250px !important;
+    font-size: 25px !important;
+  }
+ 
+}
+
+.p2 {
+  width: 360px;
+  height: 16px;
+  font-family: Poppins;
+  @include fonth1;
+  font-weight: 500;
+   line-height: 22px;
+  color: $Secondary-color;
+  @media screen and (max-width:330px) {
+    width: 250px ;
+    font-size: 25px !important;
+  }
+}
+.p3 {
+  width: 324px;
+  height: 68px;
+  font-family: TT Hoves;
+  @include fontp2;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: $Secondary-color;
+  @media screen and (max-width:330px) {
+    width: 250px !important;
+  }
+}

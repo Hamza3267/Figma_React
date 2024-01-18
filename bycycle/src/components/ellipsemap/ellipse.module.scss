@@ -1,0 +1,36 @@
+@import "../../page/bycyclepage/color.module.scss";
+@import '../../page/bycyclepage/fontsize.scss';
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pic{
+    width: 200px;
+height: 200px;
+border: 10px solid ;
+border-color: $Primary-color;
+border-radius: 110px;
+@media screen and (max-width:720px) {
+    width: 80%;
+}
+}
+.text{
+    width: 246px;
+height: 52px;
+// font-family: TT Hoves;
+@include font14;
+font-weight: 700;
+line-height: 26px;
+
+}
+.txt{
+    width: 246px;
+height: 68px;
+font-family: TT Hoves;
+@include fontp2;
+font-weight: 500;
+line-height: 17px;
+
+}

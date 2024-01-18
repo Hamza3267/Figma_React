@@ -1,53 +1,59 @@
+
 .maincontainer {
   background-color: black;
-  height: 800px;
+
 }
 .title {
-  color: #fff;
+  color: #FFF;
   font-family: Google Sans;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 65px; /* 162.5% */
-  width: 200px;
-  margin-left: 50px;
-  margin-top: 150px;
-  // height: 123px;
+   line-height: 65px; /* 162.5% */
+  // max-width: 200px;
+  // margin-left: 5%;
+  height: 0em;
+   
 }
 .content {
-  margin-left: 30px;
-  color: #fff;
+  color: #FFF;
   font-family: Google Sans;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
-  line-height: 65px;
-  margin-top: -30px;
-  width: 707px;
-  height: 123px;
+  width: 100%;
+     height: 1em;
+ 
 }
 .para {
-  width: 350px;
+  border: 1px solid red;
+  width: 370px;
   height: 72px;
-  color: #31546d;
+  color: #31546D;
   font-family: Google Sans;
   font-size: 16px;
   font-style: normal;
-  margin-left: 50px;
   font-weight: 400;
-  margin-top: -50px;
   line-height: 24px; /* 150% */
+ 
+}
+.itemsdisplayy{
+  margin:10% 1% 0% 3%;
 }
 .portionflex {
   display: flex;
+
+
+ 
 }
 
 .buttonsdisplay {
   display: flex;
-  gap: 5px;
+ 
+  
 }
 .btnediting {
-  margin-left: 50px;
+
   color: #317189;
   text-align: center;
   font-family: Google Sans;
@@ -68,6 +74,17 @@
   border: transparent !important;
   background: transparent !important;
   box-shadow: none !important;
+
+}
+.displaymousescroll{
+  display: flex;
+ margin-left: 20%;
+}
+.mouse{
+  width: 28px;
+height: 28px;
+flex-shrink: 0;
+margin: 33px -85px 107px 35%;
 }
 .mouseedit{
   color: #317189;
@@ -76,18 +93,14 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
-margin: 33px 198px 107px 75px;
-}
-.portion2 {
-  height: 184px ;
-  flex-shrink: 0;
-  background-color:  lightblue;
+ margin: 35px 90px;
+width: 100%;
+height: fit-content;
 
 }
-
 
 .text {
-   margin-left: 660px;
+    margin:0 auto;
   color: #31546d;
   text-align: center;
   font-family: Google Sans;
@@ -99,7 +112,7 @@ margin: 33px 198px 107px 75px;
 .displayflex{
     display: flex;
     border: transparent !important;
-    margin-left: 65px;
+     margin-left: 20px;
 }
 .flexibility{
     display: flex;
@@ -107,7 +120,8 @@ margin: 33px 198px 107px 75px;
 }
 .flexcontent{
     display: flex;
-    gap: 100px;
+    gap: 50px;
+   
 }
 .fillter{
     color: #9AB0C0;
@@ -117,11 +131,25 @@ font-style: normal;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
 }
+.arrow{
+  width: 10px;
+height: 10px;
+flex-shrink: 0;
+margin-top: 20%;
+margin-left: 5px;
+}
+.arroww{
+  width: 10px;
+height: 10px;
+flex-shrink: 0;
+margin-top: 18%;
+margin-left: 5px;
+}
 .product{
  margin-left: 10px;
     color: #31546D;
 font-family: Google Sans;
-font-size: 16px;
+font-size: 15px;
 font-style: normal;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
@@ -129,7 +157,7 @@ line-height: 30px; /* 187.5% */
 .sort{
     color: #9AB0C0;
 font-family: Google Sans;
-font-size: 16px;
+font-size: 15px;
 font-style: normal;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
@@ -138,14 +166,14 @@ line-height: 30px; /* 187.5% */
     margin-left: 10px;
     color: #31546D;
 font-family: Google Sans;
-font-size: 16px;
+font-size: 15px;
 font-style: normal;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
 }
 .price{
   margin-top: 163px;
-  margin-left: 485px;
+  margin-left: 392px;
   color: #31546D;
 text-align: right;
 font-family: Google Sans;
@@ -157,7 +185,7 @@ line-height: 65px; /* 162.5% */
 }
 .grip{
   margin-top: -49px;
-  margin-left: 212px;
+  margin-left: 122px;
   color: #31546D;
 font-family: Google Sans;
 font-size: 64px;
@@ -182,7 +210,7 @@ line-height: 65px;
 
 }
 .fullprice {
-  margin-left: 441px;
+  margin-left: 355px;
   margin-top: 60px;
   color: #41a0b7;
   text-align: center;
@@ -201,7 +229,7 @@ line-height: 65px;
 .description{
   width: 400px;
   height: 35px;
-  margin: -60px 66px 559px 300px;
+margin-left: 205px;
   color: #31546D;
 text-align: right;
 font-family: Google Sans;
@@ -209,6 +237,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
+margin-top: -50px;
 
 }
 .viewbutton {
@@ -227,11 +256,11 @@ line-height: 24px; /* 150% */
   border: transparent !important;
 }
 .buttons{
-  margin-top: -480px;
-  margin-left: 455px;
+   margin-top: 80px;
+   margin-left: 410px;
 }
 .lastportion{
-  width: 1710px;
+  width: 100%;
 height: 269px;
 flex-shrink: 0;
 background: rgba(10, 41, 77, 0.80);

@@ -1,0 +1,165 @@
+@import "./color.module.scss";
+@import "./fontsize.scss";
+
+.maincontainer {
+  background-color: rgba(47, 128, 237, 1);
+  padding: 15px;
+  @media screen and (max-width: 500px) {
+    height: 50vh !important;
+  }
+}
+.picturesetting {
+  width: 71.7%;
+  height: 80vh;
+  border-radius: 339px, 0px, 0px, 339px;
+  border: 10px;
+  padding: 0px 0px 0px 30%;
+  @media screen and (max-width: 1100px) {
+    width: 70%;
+    height: 50vh;
+  }
+  @media screen and (max-width: 500px) {
+    width: 0%;
+  }
+}
+.buttondiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .buttonedit {
+    background: none !important;
+    color: $Secondary-color;
+  }
+}
+.maincontainersubdiv {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 450px) {
+    padding: 0px 0px 0px 10%;
+  }
+}
+.portion2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+   height: max-content !important;
+   padding: 20px;
+  @media screen and (max-width: 1000px) {
+    padding-left: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    padding-left: 2px;
+  }
+}
+.portion3 {
+  background-color: rgba(240, 246, 254, 1);
+  margin-top: -57px;
+  @media screen and (max-width:800px ) {
+    margin-top: -32px;;
+  }
+}
+.about {
+  font-size: calc(32px + (42 - 32) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 900;
+  letter-spacing: 0em;
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+  color: $Tertiary-color !important;
+  @media screen and (max-width:500px) {
+    display: flex;
+    justify-content: center;
+    }
+}
+.description {
+  font-family: Poppins;
+  font-size: calc(12px + (14 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: $Fourth-color !important;
+  text-align: center;
+  @media screen and (max-width:500px) {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  }
+}
+.portion3pic {
+  width: 45%;
+  height: 412px;
+  border-radius: 0px, 214px, 214px, 0px;
+  @media screen and (max-width:500px) {
+    width: 0%;
+  }
+}
+.pportion3 {
+  display: flex;
+  gap: 30px;
+}
+.maptextportion3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.btned {
+  width:100px !important;
+  font-size:14px ;
+  background: none !important;
+  color: $Tertiary-color !important;
+  width: 100% !important;
+  @media screen and (max-width:400px) {
+    width: 90px !important;
+  
+  }
+  @media screen and (max-width:1000px) {
+    width: 10px ;
+    font-size: 10px !important;
+  }
+}
+.portion4 {
+  background-color: $Primary-color;
+}
+.griddiv {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  @media screen and (max-width: 1500px) {
+    padding-left: 76px !important;
+  }
+  @media screen and (max-width: 1100px) {
+    padding-left: 5px !important;
+  }
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 800px) {
+   padding-left: 40px !important;
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 10px !important;
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+     padding-left: 80px !important;
+  }
+  @media screen and (max-width: 350px) {
+    grid-template-columns: repeat(1, 1fr);
+     padding-left: 60px !important;
+  }
+}
+
+.lastportion {
+  background: $Tertiary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.mask2 {
+  width: fit-content;
+  @media screen and (max-width: 500px) {
+    width: 0%;
+  }
+}

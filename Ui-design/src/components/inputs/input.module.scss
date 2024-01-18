@@ -1,0 +1,19 @@
+.mainform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forminput{ 
+    min-height: 50px;
+    padding: 7px 100px;
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+.formnum{
+    margin-left: 20px;
+    min-height: 50px;
+    padding: 7px 100px;
+    border: 1px solid black;
+    background-color: #ffffff;
+}

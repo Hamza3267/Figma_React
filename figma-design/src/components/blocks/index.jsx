@@ -3,6 +3,7 @@ import Style from "./block.module.scss";
 import Fruit from "../../assets/images/fruit.png";
 import Leftarrow from "../../assets/images/arrowleft.png";
 import Rightarrow from "../../assets/images/arrowright.png";
+
 const slides = [
   {
     p: "New lot",
@@ -53,7 +54,7 @@ const CardSlider = () => {
     <div className={Style.carousel}>
       <div
         className={Style.carouselItems}
-        style={{ transform: `translateX(-${currentIndex * 600}px)` }}
+        style={{ transform: `translateX(-${currentIndex * 505}px)` }}
       >
         {slides.map((slide, index) => (
           <div key={index} className={Style.icon}>
@@ -61,6 +62,7 @@ const CardSlider = () => {
               <p className={Style.p}>{slide.p}</p>
               <img src={Fruit} alt="" className={Style.img} />
             </div>
+
             <div className={Style.border}></div>
             <div className={Style.textflex}>
               <p className={Style.ptextss}>{slide.text}</p>
@@ -69,8 +71,9 @@ const CardSlider = () => {
           </div>
         ))}
       </div>
+      
       <div className={Style.arrows}>
-      <img
+        <img
           src={Leftarrow}
           alt=""
           className={`${Style.carouselButton} ${Style.prev}`}
@@ -88,9 +91,8 @@ const CardSlider = () => {
           ))}
         </div>
 
-       
         <img
-          src={Rightarrow}
+          src={Leftarrow}
           alt=""
           className={`${Style.carouselButton} ${Style.next}`}
           onClick={handleNextClick}

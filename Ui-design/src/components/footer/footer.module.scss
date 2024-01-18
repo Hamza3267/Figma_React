@@ -1,0 +1,51 @@
+.borderline {
+    border: 1px solid gray;
+    max-width: 1500px;
+    margin-top: 170px;
+    margin-left: 80px;
+  }
+  .footer {
+    margin-left: 75px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: gray;
+    font-weight:400;
+  }
+  .footerportion {
+    display: flex;
+  }
+  .customfooter {
+    font-size: 17px;
+    font-weight:rgb(215, 213, 213);
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    color: gray;
+    border: 1px solid gray;
+    width: 180px !important;
+    height: 35px !important;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    margin-left: 20px;
+    margin-top: 45px;
+    cursor: pointer;
+    &:hover {
+      color: white;
+    }
+  }
+
+.links{
+    display: flex;
+    gap: 30px;
+    height: 35px;
+     margin-top: 45px;
+ margin-left: 520px;
+}
+.logo{
+    border: 1px solid gray;
+    border-radius: 40px;
+   &:hover{
+    background-color: white;
+
+   }
+}

@@ -1,0 +1,48 @@
+@import "../../pages/handyman/color.module.scss";
+@import "../../pages/handyman/fontsize.scss";
+
+.btn {
+    border-radius: 40px;
+    border: none;
+    width: 60%;
+    height: 30px ;
+    @include fontp2;
+    color: $Fourth-color;
+    background-color: $Secondary-color;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 20px;
+   
+    @media screen and (max-width:800px) {
+      width: 100%;
+      height: 30px;
+    }
+    @media screen and (max-width:500px) {
+      width: 100% ;
+      height: 25px;
+       font-size:10px !important ;
+    
+    }
+    @media screen and (max-width:400px) {
+      width: 60px ;
+      height: 25px;
+       font-size:10px !important ;
+    
+    }
+ 
+ 
+  }
+  .buttonedits{
+    width: 100%;
+ 
+    height: 40px ;
+    @media screen and (max-width:500px) {
+     
+      height: 30px;
+       display: flex;
+        justify-content: center;
+      
+    }
+ 
+  }
+  

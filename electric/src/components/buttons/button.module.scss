@@ -1,0 +1,24 @@
+@import '../../page/electrc/color.module.scss';
+@import '../../page/electrc/fontsize.scss';
+
+
+.btn {
+    border-radius: 40px;
+    border: none;
+    width: 100%;
+    height: 30px ;
+    @include fontp2;
+    color: $Fourth-color;
+    background-color: $fifth-color;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 20px;
+
+  }
+ .buttonedits{
+  width: 10vw;
+  @media screen and (max-width:450px) {
+    width: 60px !important;
+  }
+ }
+  

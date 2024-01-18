@@ -1,0 +1,32 @@
+ .flexbox{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0% 0% 0%;
+    gap: 10px;
+ }
+
+ .pic {
+    max-width: 60px;
+    height: 67px; 
+  }
+
+.text { 
+    color: #FFFFFF;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    margin: 0 auto;  
+  }
+
+  .txt{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.7em;
+    color: #ffff;
+    margin: 0 auto;
+    
+  }
+
+  

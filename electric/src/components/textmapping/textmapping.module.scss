@@ -1,0 +1,70 @@
+@import '../../page/electrc/color.module.scss';
+@import '../../page/electrc/fontsize.scss';
+
+.textmaindiv{
+  padding-top: 70px;
+display: flex;
+flex-direction: column;
+width: 22%;
+justify-content: center;
+align-items: center;
+// @media screen and (max-width:500px) {
+//   width: 30% !important;
+// }
+// @media screen and (max-width:400px) {
+//   width: 0% ;
+// }
+}
+.p{
+ 
+   width: 100%;
+@include fonth2;
+font-weight: 300;
+letter-spacing: 0em;
+ margin: 0 auto;
+ color: $Primary-color;
+@media screen and (max-width:500px) {
+  width: 10% !important;
+  margin-left: 50px;
+}
+}
+.p1{
+   width: 100%;
+// font-family: SF Pro Display;
+@include font90;
+font-weight: 900;
+letter-spacing: 0em;
+margin: 0 auto;
+color: $Tertiary-color;
+@media screen and (max-width:500px) {
+  width: 1px !important;
+  margin-left: 50px;
+}
+}
+
+.p2{
+
+   width: 100%;
+ font-family: SF Pro Display;
+@include fontp2;
+font-weight: 900;
+line-height: 14px;
+margin: 0 auto;
+@media screen and (max-width:350px) {
+  width: 170px !important;
+  margin-left: 40% ;
+  color: $Secondary-color;
+ 
+}
+@media screen and (max-width:500px) {
+  width: 200px;
+  margin-left: 60% !important;
+  color: $Secondary-color;
+ 
+}
+@media screen and (max-width:800px) {
+  width: 250px;
+
+}
+
+}

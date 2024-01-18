@@ -2,58 +2,66 @@ $dotSize: 10px;
 $dotSpacing: 8px; 
 
 
-.carousel {
-  //  position: relative;
-  overflow: hidden;
+  .carousel {
+    overflow: hidden;
+    width: 38%;
+     height: 48em;
+     margin: 0% 0% 14% 2%; 
+  }
 
-  width: 600px;
-  margin-left: 220px;
-}
 .carouselItems {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  gap: 15px;
+
+
 }
 
 .icon {
-  width: 569px;
-  height: 554px;
+  width: 102%;
+   height:35em;
   flex-shrink: 0;
-  margin-left: 30px;
-  margin-top: 93px;
+   margin-top: 93px;
   border-radius: 50px;
   background: #fff;
+ 
   box-shadow: 0px 4px 50px 0px rgba(120, 143, 156, 0.25);
+ 
   .border {
     border: 1px solid #F2F2F2;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -100px;
-    width: 150px;
-    margin-left: 37%;
+    max-width: 30%;
+     margin-left: 35%;
 
   }
 }
+
+
 .textflex{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  //align-items: ;
   gap: 4px;
 }
 .flexitem {
   display: flex;
 }
+
 .img {
-  width: 362px;
-  height: 362px;
-  margin: 50px 104px 142px 6px;
+  width: 80%;
+  height: 25em;
+  flex-shrink: 0;
+  margin:  6% 70% 20px -5% ; 
+ 
  
 }
 .ptextss {
   color: #818181;
   text-align: center;
   font-family: Google Sans;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 120% */
@@ -61,10 +69,10 @@ $dotSpacing: 8px;
  
 }
 .pprice{
-
+ 
   color: #317189;
 font-family: Google Sans;
-font-size: 20px;
+font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 24px;
@@ -73,43 +81,42 @@ text-transform: uppercase;
 .p {
   color: #fff;
   font-family: Google Sans;
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
   border-radius: 0px 8px 8px 0px;
   background: #8a93e5;
-  width: 97px;
-  height: 40px;
+  width: 18%;
+  height: 2.5em;
   flex-shrink: 0;
-  margin-top: 76px;
+  margin-top: 20%;
 }
 
 .prev {
-  width: 34px ;
-  height: 34px ;
+  width:8% ;
+  height: 2.3em ;
   color: #fff;
   border: none;
-  margin-top: 10px;
   cursor: pointer;
  
 }
+
 .next {
-  width: 24px;
-  height: 24px;
+  width:8% ;
+  height: 2.3em ;
   color: #fff;
   border: none;
-  margin-top: 10px;
   cursor: pointer;
-  // font-size: 16px;
+  transform: scaleX(-1);
 
 }
 
 .arrows{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
+  justify-content:center;
+  align-items:start;
+ margin-top: 10%;
 }
 .carousel {
 
@@ -123,7 +130,8 @@ text-transform: uppercase;
       height: $dotSize;
       background-color: #D7DBFF; 
       border-radius: 50%;
-      margin: 0 $dotSpacing;
+       margin: 0 $dotSpacing;
+      // margin-top: -30px;
 
       &.activeDot {
         background-color: #97a2ff; 

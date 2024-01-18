@@ -1,0 +1,147 @@
+@import "./color.module.scss";
+@import "./fontsize.scss";
+
+.maindiv {
+  height: 100vh;
+  width: 100%;
+}
+.subdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (max-width:350px) {
+    display: grid;
+    width: 100% !important;
+  }
+  @media screen and (max-width:400px) {
+    display: grid;
+    width: 310px !important;
+  }
+  @media screen and (max-width:500px) {
+    display: grid;
+    width: 420px;
+  }
+
+
+}
+.buttondiv {
+  display: flex;
+  padding-top: 20px;
+  @media screen and (max-width: 500px) {
+   padding-left: 30px !important;
+  }
+  .buttonedit {
+    background: none !important;
+    color: $Tertiary-color;
+  }
+}
+.title {
+  padding-left: 80%;
+  @media screen and (max-width: 500px) {
+    width: 260px !important;
+  }
+}
+.paraclass {
+  font-size: calc(26px + (70 - 26) * (100vw - 320px) / (1440 - 320)) !important;
+  width: 505px !important;
+  padding-left: 80%;
+  @media screen and (max-width: 500px) {
+    width: 260px !important;
+  }
+}
+.portion2subdiv {
+  height: 100%;
+
+}
+.mapdiv{
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+}
+.portion3{
+  height: 100%;
+
+}
+.paradiv{
+padding-left: 20%;
+}
+.portion4{
+  display: grid;
+
+  // justify-content: center;
+  align-items: center;
+}
+.picwidthsetting{
+ 
+  width: 100%;
+  height: 100%;
+}
+
+.picsmapediting{
+ 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  width: 60%;
+  height: 100%;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+
+  @media screen and (max-width:500px) {
+    grid-template-columns: repeat(2,1fr);
+  }
+  @media screen and (max-width:400px) {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.portion5{
+  background: $Tertiary-color;
+  border: none;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+ background: $Tertiary-color;
+ border-bottom-left-radius: 35px;
+ border-bottom-right-radius: 35px;
+ @media screen and (max-width:530px) {
+  width: 100%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-top: 30px;
+ }
+}
+.flexdiv{
+  display: flex;
+justify-content: center;
+gap: 60px;
+@media screen and (max-width:400px) {
+  gap: 10px;
+ 
+}
+
+}
+.textdiv{
+  margin-top: -50px;
+  margin-bottom: 40px;
+  margin-left: -70px;
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.lasttitle{
+width: 330px !important;
+ color:$Secondary-color !important;
+ font-weight: 900 !important;
+ font-size: calc(26px + (70 - 26) * (100vw - 320px) / (1440 - 320)) !important;
+@media screen and (max-width:450px) {
+  width: 200px !important;
+  
+}
+
+}

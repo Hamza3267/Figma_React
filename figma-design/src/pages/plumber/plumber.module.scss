@@ -1,0 +1,290 @@
+@mixin font70 {
+  font-size: calc(26px + (70 - 26) * (100vw - 320px) / (1440 - 320));
+}
+@mixin font13 {
+  font-size: calc(11px + (13 - 11) * (100vw - 320px) / (1440 - 320));
+}
+@mixin font15 {
+  font-size: calc(13px + (15 - 13) * (100vw - 320px) / (1440 - 320));
+}
+@mixin font22 {
+  font-size: calc(14px + (22 - 14) * (100vw - 320px) / (1440 - 320));
+}
+@mixin font26 {
+  font-size: calc(16px + (26 - 16) * (100vw - 320px) / (1440 - 320));
+}
+@mixin font30 {
+  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
+}
+@mixin font18 {
+  font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320));
+}
+@mixin font14{
+  font-size: calc(14px + (18 - 8) * (100vw - 320px) / ( 1440 - 320));
+}
+@mixin font10 {
+  font-size: calc(8px + (10 - 8) * (100vw - 320px) / (1440 - 320));
+}
+
+
+.maindiv{
+
+  // height: 85vh;
+  width: 100vw;
+}
+
+.divpic{
+  display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.titletext{
+font-size: 40px;
+font-weight: 800;
+line-height: 27px;
+letter-spacing: 0em;
+width: 523px;
+ height: 27px;
+color:#ffff;
+display: grid;
+align-items: center;
+justify-content: center;
+}
+.para{
+
+  width: 440px;
+height: 68px;
+font-size: 13px;
+font-weight: 600;
+ line-height: 22px;
+ margin: 0 auto;
+color:#ffff;
+
+
+}
+.displaywrenchpic{
+  display: flex;
+ gap: 120px;
+ margin-top: 6%;
+
+}
+
+.button{
+  width: 132px;
+  height: 47px;
+ border-radius: 10px;
+border: none;
+font-size: 14px !important;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+color: #ffff;
+background:rgb(105, 191, 241) !important;
+
+}
+.buttonediting{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+}
+.portion2{
+  background-color: #ffff;
+  height: 500px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+}
+
+
+.divstyle{
+  border: 1px solid white;
+  border-top-left-radius:50px ;
+  border-bottom-left-radius: 50px;
+  background:rgb(105, 191, 241) ;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26.5%;
+  padding-left: 15%;
+  width: 400px;
+ 
+}
+.title{
+  width: 420px !important;
+   height: 36px !important;
+  // font-family: Poppins;
+font-size: 42px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0em;
+color: #ffff ;
+ 
+}
+.paragraph{
+  width: 432.4px;
+  height: 80px;
+   font-family: Poppins;
+font-size: 12px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+
+}
+.pictureedit{
+  border: 2px solid #ffff;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-left: none;
+  width: 459px;
+height: 376px;
+margin-top: 10%;
+}
+
+.divbackportion{
+  background-color: #ffff;
+  width: 500px;
+}
+.portion3{
+background:rgb(105, 191, 241) ;
+height: 550px;
+width: 100%;
+}
+
+.portionflex{
+  display: flex;
+}
+
+.buttons{
+  width: 132px;
+  height: 47px;
+ border-radius: 10px;
+ border: 2px solid #ffff;
+border-color: #ffff !important;
+font-size: 14px !important;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: 0em;
+color: #ffff;
+background:rgb(105, 191, 241) !important;
+display: flex;
+justify-content: center;
+}
+.buttoneditings{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+   margin-top:-5% ;
+}
+.portion4{
+    margin-top: 1.2%;
+  background:rgb(105, 191, 241);
+
+ 
+}
+.tiitle{
+  width: 2px !important;
+height: 1px !important;
+// font-family: Poppins;
+font-size: 48px;
+font-weight: 700;
+ line-height: 1%;
+letter-spacing: 0em;
+color: #ffff;
+
+}
+.textalign{
+display: flex;
+justify-content: center;
+margin-right: 15%;
+
+}
+.imgsetting{
+  width: 56px !important;
+height: 56px !important;
+
+
+}
+.rectanglesetting{
+  width: 90px !important;
+height: 90px !important;
+
+
+
+}
+.displaywrench{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.mapsetiing{
+  padding: 1.5% 4.8% 0% 4.8%;
+}
+.portion5{
+  background-color: #ffff;
+  height: 284px;
+}
+.setiing{
+  padding: 1.5% 2% 0% 3%;
+}
+.btnediting{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.portion7{
+  height: 718px;
+  background:rgb(105, 191, 241);
+}
+
+.commentgrid {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 2% 6% 5% 6%;
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Your mixins here
+
+.mainheading{
+  max-width: 336px;
+max-height: 72px;
+font-size: 48px;
+font-weight: 700;
+//  line-height: 12px;
+letter-spacing: 0em;
+color: #ffff;
+
+
+
+}
+.headingset{
+  display: grid;
+  justify-content: center;
+}
+.lastportion{
+  height: 520px;
+}
+.mainheadings{
+  max-width: 271px;
+max-height: 42px;
+font-size: 48px;
+font-weight: 700;
+display: grid;
+justify-content: center;
+padding: 1% 5% 2% 15%;
+letter-spacing: 0em;
+color: rgb(105, 191, 241);
+
+}

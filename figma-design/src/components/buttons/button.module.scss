@@ -1,9 +1,10 @@
 .btn{
-    width: 180px;
+    width: 160px;
     height: 56px;
     flex-shrink: 0;
+    // border: 1 px solid #ffff;
     border-radius: 18px;
     background: linear-gradient(90deg, #FFF 0%, #F1FAFF 100%);
-    box-shadow: 0px 20px 40px 0px rgba(255, 255, 255, 0.15);
+     box-shadow: 0px 20px 40px 0px rgba(255, 255, 255, 0.15);
 }
 

@@ -1,0 +1,29 @@
+@import "../../pages/handyman/color.module.scss";
+@import "../../pages/handyman/fontsize.scss";
+
+.maincontainer{
+    display: grid;
+
+}
+.order{
+    font-family: Poppins;
+@include font15;
+font-weight: 900;
+line-height: 21px;
+letter-spacing: 0em;
+border: 1px solid;
+width: 20px;
+height: fit-content;
+border-radius: 40px;
+
+}
+.descrip{
+    font-family: Poppins;
+    @include font15;
+font-weight: 500;
+width: 80%;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}

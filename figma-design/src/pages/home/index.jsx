@@ -7,30 +7,28 @@ import Button from "../../components/buttons";
 import Card from "../../components/cards";
 import Vector from "../../assets/images/vector.png";
 import Ellipse from "../../components/Ellipse";
+import Mouse from "../../assets/images/mouse.png"
+import Arrow from '../../assets/images/arrow.png'
 const Home = () => {
   const overlayStyle = {
     backgroundImage: `url(${Vector})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    width: "100vw",
-    height: "250vh",
+    // backgroundSize: "cover",
+    // backgroundRepeat: "no-repeat",
+    // backgroundPosition: "center",
+    maxwidth: "100%",
+    height: "100%",
     background: `linear-gradient(
     to bottom,#87CEEB,    #87CEEB,    #87CEEB,    peachpuff,  peachpuff,  peachpuff,  #87CEEB,  #87CEEB    )`,
   };
   const overStyle = {
     backgroundImage: `url(${Vector})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    width: "100vw",
-    height: "260vh",
+    
   };
   return (
     <div className={style.maincontainer} style={overlayStyle}>
       <Navbar />
       <div className={style.portionflex}>
-        <div>
+        <div className={style.itemsdisplayy}>
           <Text title={"Welcome to"} textClass={style.title} />
           <Text title={"Pop Rock Crystal Shop!"} textClass={style.content} />
           <Text
@@ -46,17 +44,23 @@ const Home = () => {
         </div>
         <Block />
       </div>
+      <div className={style.displaymousescroll}>
+      <img src={Mouse} alt="" className={style.mouse} />
       <Text title={"scroll down"} textClass={style.mouseedit}/>
+      </div>
+
       <div className={style.portion2} style={overStyle}>
         <Text title={"All products"} textClass={style.text} />
         <div className={style.flexcontent}>
           <div className={style.displayflex}>
             <Text title={"Filter:"} textClass={style.fillter} />
             <Text title={"All products"} textClass={style.product} />
+            <img src={Arrow} alt=""  className={style.arroww}/>
           </div>
           <div className={style.flexibility}>
             <Text title={"Sort:"} textClass={style.sort} />
             <Text title={"Best Selling"} textClass={style.selling} />
+            <img src={Arrow} alt=""  className={style.arrow}/>
           </div>
         </div>
         <Card />
@@ -87,8 +91,9 @@ const Home = () => {
               <Button title={"Buy now"} btnClass={style.viewbutton} />
             </div>
           </div>
-
+              
           <Ellipse />
+          
         </div>
       </div>
 

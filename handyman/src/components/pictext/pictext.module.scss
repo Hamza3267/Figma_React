@@ -1,0 +1,40 @@
+@import '../../pages/handyman/color.module.scss';
+@import '../../pages/handyman/fontsize.scss';
+
+.flexbox{
+  display: flex;
+  gap: 0.5%;
+ 
+}
+ .pic {
+  width: 7%;
+height: 10vh;
+@media screen and (max-width:1100px) {
+  height: 6vh;
+  
+}
+@media screen and (max-width:500px) {
+  height: 5vh;
+  
+  
+}
+  }
+
+.text { 
+    color: $Primary-color;
+    @include fonth2;
+    font-weight: 700;
+     margin: 0 auto;  
+   
+  }
+
+  .txt{
+    color: $Primary-color;
+    @include fontpNew;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin: 0 auto;
+    
+  }
+
+  

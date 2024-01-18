@@ -1,0 +1,277 @@
+.info {
+  height: 1000px;
+}
+
+.btns {
+  display: flex;
+  margin-top: 70px;
+}
+
+.img3 {
+  width: 450px;
+  height: 480px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.img4 {
+  width: 350px;
+  height: 350px;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  margin-top: -250px;
+  margin-left: 350px;
+}
+
+.img-section {
+  margin-left: -80px;
+  margin-top: -50px;
+}
+
+.info h1 {
+  color: white;
+}
+
+.ptext {
+  margin-top: 70px;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+}
+
+.text {
+  margin-top: 70px;
+  margin-left: 100px;
+  width: 1250px;
+}
+
+.text .txts {
+  color: white;
+  margin-top: 100px;
+  width: 700px;
+}
+
+.p {
+  font-size: 23px;
+  width: 700px;
+}
+
+.button {
+  border-radius: 10px;
+  height: 60px;
+}
+
+.customBtn {
+  background-color: transparent !important;
+  border-radius: 0% !important;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #fbc02d;
+  width: 220px !important;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.customBtn:hover {
+  color: #fbc02d;
+}
+
+.display {
+  display: flex;
+  margin-top: 50px;
+}
+
+.portion2 {
+  height: 1390px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 28px;
+  color: gray;
+}
+
+.txts {
+  width: 500px;
+}
+
+.editBtn {
+  width: 350px !important;
+  color: black !important;
+  margin-top: 50px;
+}
+
+.editBtn:hover {
+  color: #fbc02d;
+}
+
+.textSetting {
+  margin-top: 70px;
+  margin-left: 100px;
+  width: 800px;
+}
+
+.textSetting {
+  margin-top: 15px;
+}
+.textSetting .txts {
+  color: black;
+  margin-top: 50px;
+  width: 700px;
+}
+.textSetting .tittle {
+  font-size: 45px;
+}
+
+.tabSetting {
+  display: flex;
+  margin-top: 60px;
+}
+
+.para {
+  margin-right: 70px !important;
+}
+
+.mapping {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  gap: 30px;
+}
+
+.portion3 {
+  height: 450px;
+}
+
+.heading {
+  color: white;
+  font-size: 50px !important;
+  margin-top: 100px;
+  width: 1100px;
+}
+
+.mainHead {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cBtn {
+  color: #fbc02d !important;
+  margin-left: -380px !important;
+  height: 25px !important;
+}
+
+.flex {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.cText {
+  margin-top: -36px !important;
+  margin-left: -170px !important;
+  color: #fbc02d !important;
+}
+
+.editIconText {
+  border: 1px solid #fbc02d;
+  border-radius: 5px;
+  height: 60px;
+  width: 270px;
+  margin-left: 50px;
+}
+
+.portion4 {
+  background-color: #fff;
+  height: 1100px;
+}
+
+.barflex {
+  display: flex;
+  margin-left: 100px;
+}
+
+.bar {
+  margin-left: 90px;
+  margin-top: 150px;
+  gap: 60px;
+}
+
+.titletextss {
+  color: gray;
+  margin-top: 150px;
+}
+
+.t {
+  margin-top: 70px !important;
+  font-size: 20px;
+  width: 710px;
+  color: gray;
+  font-weight: light;
+}
+
+.portion4text {
+  margin-top: 50px;
+  font-size: 40px;
+  width: 700px;
+}
+
+.alltext {
+  margin-left: -25px;
+}
+
+.numtex {
+  display: flex;
+  margin-left: 30px;
+}
+
+.container5 {
+  height: 600px;
+  background-color: #f1f3f5;
+}
+
+.formheading {
+  color: black;
+  font-size: 50px !important;
+  margin-top: 100px;
+  width: 1100px;
+}
+
+.editBtun {
+  width: 760px !important;
+  color: black !important;
+  margin-top: 10px;
+}
+
+.buttonedit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portion6 {
+  height: 1200px;
+  background-color: #fff;
+}
+
+.iconcolor {
+  background-color: white !important;
+}
+
+.textsize {
+  color: black !important;
+  width: 560px;
+}
+
+.icontextediting {
+  margin-left: -100px !important;
+}/*# sourceMappingURL=home.module.css.map */

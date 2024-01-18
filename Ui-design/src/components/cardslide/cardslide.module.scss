@@ -1,0 +1,74 @@
+.maincontainer {
+  border: 1px solid gray;
+  width: 480px;
+  height: 400px;
+  //  margin-left: -5px;
+  margin-top: 100px;
+}
+
+.cardslider {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.h3div {
+  margin-left: 50px;
+}
+
+.text {
+  color: gray;
+  font-size: 25px;
+  font-family: Sans-serif;
+  font-weight: lighter;
+  width: 400px;
+}
+
+.textt {
+  color: gray;
+  margin-top: -20px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.h3divv {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 1500px; 
+  margin: 0 auto;
+}
+
+.carouselItems {
+  display: flex;
+ width: 470px;
+ gap: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselItem {
+  flex: 0 0 100%;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev {
+  left: -1px;
+}
+
+.next {
+  right: 10px;
+}

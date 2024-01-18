@@ -1,0 +1,42 @@
+@import '../../pages/handyman/color.module.scss';
+@import '../../pages/handyman/fontsize.scss';
+
+.textmap{
+    display: flex;
+}
+.img{
+    
+}
+.heading1{
+    width: 45%;
+      color: $Fourth-color;
+      // font-family: SF Pro Display;
+      @include font18;
+    //   font-size: calc(28px + (36 - 28) * (100vw - 445px) / (1440 - 445));
+    font-weight: 900;
+     line-height: 1px;
+    letter-spacing: 0em;
+ 
+    
+    }
+    .heading3{
+       color: $Fourth-color;
+      // font-family: SF Pro Display;
+      @include font18;
+    //   font-size: calc(28px + (36 - 28) * (100vw - 445px) / (1440 - 445));
+    font-weight: 900;
+      line-height: 1px;
+    letter-spacing: 0em;
+     margin-top: 0px !important;
+    
+    }
+    .heading2{
+    //    margin:1 auto;
+      color: $Secondary-color !important;
+      // font-family: SF Pro Display;
+      @include font18;
+    font-weight: 900;
+     line-height: 1px;
+    letter-spacing: 0em;
+    
+    }

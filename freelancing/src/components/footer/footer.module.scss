@@ -1,0 +1,40 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.mainconainer{
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+   
+   
+}
+.flex{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+.divflex{
+  display: flex;
+  align-items: center;
+    
+}
+.name{
+    width: 17%;
+    line-height: 2px;
+    color: #555555;
+    cursor: pointer;
+    &:hover{
+        color: $Primary-color;
+        
+    }
+  
+}
+
+.picture{
+    &:hover{
+        background: $Primary-color;
+       
+      
+        
+    }
+}

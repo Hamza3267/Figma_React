@@ -1,0 +1,274 @@
+@import "./color.module.scss";
+@import "./fontsize.scss";
+
+.picedit {
+  max-width: 55%;
+  max-height: 100vh;
+
+  @media only screen and (max-width: 850px) {
+    width: 0%;
+    // margin: 0 auto;
+  }
+}
+
+.subdiv {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.texdivedit {
+  margin: 40% 0% 0% 0%;
+}
+.flexcontainer {
+  display: flex;
+
+}
+.portion2 {
+  height: 110%;
+  background: $Tertiary-color;
+}
+.desc {
+  max-width: 497px;
+  @include font64;
+  font-weight: 700 !important;
+  line-height: 4px !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.para {
+  width: 150px;
+  margin: 0 auto;
+  font-weight: 500 !important;
+  line-height: 45px !important;
+  @include font14;
+  color: $Primary-color !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  display: flex;
+  justify-content: center;
+}
+.borderedit {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: rgb(235, 233, 233);
+  width: 500px;
+  height: 200px;
+  @media only screen and (max-width: 365px) {
+    width: 100%;
+  }
+}
+.edittextmapcomponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mapdiv {
+  margin-top: 7%;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: repeat(4, 0fr);
+
+  @media screen and (max-width: 770px) {
+    grid-template-columns: repeat(2, 0fr);
+    padding: 0% 0% 0% 10px;
+  }
+  @media screen and (max-width: 520px) {
+    grid-template-columns: repeat(1, 0fr);
+  }
+}
+.butnsdiv{
+  .buttonedit {
+    width: 100% !important ;
+ height: 36px !important;
+  border-radius: 42px;
+
+}
+}
+
+.portion3 {
+  height: fit-content !important;
+  // width: max-content !important;
+  background: $Primary-color;
+}
+.about {
+  max-width: 497px;
+  @include font64;
+  font-weight: 700 !important;
+  line-height: 4px !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  margin: 0 auto;
+  display: flex;
+  color: $Tertiary-color !important;
+  justify-content: center;
+}
+.description {
+  width: 187px;
+  margin: 0 auto;
+  font-weight: 500 !important;
+  line-height: 45px !important;
+  @include font14;
+  color: $Secondary-color !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  display: flex;
+  justify-content: center;
+}
+.divflexibility {
+  // border: 2px solid ;
+  max-width: 60%;
+  height: 100%;
+  background-color: aliceblue;
+  margin: 0 auto;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 30px;
+  display: flex;
+  // @media screen and (max-width:450px) {
+  //   height: 100%;
+  // }
+}
+.imgsetting {
+  width: 296px;
+  height: 63vh;
+  @media screen and (max-width: 700px) {
+    width: 130px !important;
+    height: 120px !important;
+    padding: 0 0 0 18%;
+  }
+  @media screen and (max-width: 770px) {
+    width: 200px;
+    height: 380px;
+  }
+}
+.commentportion {
+  width: 286px !important;
+  height: 46px !important;
+  font-family: "Vampiro One" !important;
+  @include fonth1;
+  font-weight: 400;
+
+  @media screen and (max-width: 520px) {
+    width: 200px !important;
+     font-size: 10px !important;
+    margin: -60px 0% 0% 11%;
+  }
+}
+
+.paraclass {
+  width: 352px;
+  height: 204px;
+  font-family: TT Hoves;
+  font-size: calc(12px + (14 - 12) * (100vw - 445px) / (1440 - 445)) !important;
+  font-weight: 500;
+  line-height: 14px !important;
+  @media screen and (max-width: 1024px) {
+    width: 238px !important;
+    height: 380px;
+    // font-size: 10px !important;
+    margin: -29px 0% 0% 0%;
+  }
+  @media screen and (max-width: 435px) {
+    max-width: 80% !important;
+    overflow:auto;
+     font-size: 7px !important;
+    margin: -10px 0% 0% 12%;
+    height: 45px !important;
+  }
+}
+
+.buttonclass {
+  width: 208px !important;
+  height: 46px;
+  @include font14;
+
+  @media screen and (max-width: 700px) {
+    max-width: 70px;
+    max-height: 20px;
+    font-size: 6px !important;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 800px) {
+    margin-top: 40px;
+
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 504px) {
+  
+    margin-top: -90px;
+    margin-left: 65px;
+  }
+}
+
+.butndiv {
+  padding: 25% 0% 0% 0%;
+}
+.portiontextbutndiv {
+  padding: 0% 0% 0% 5%;
+}
+@media (max-width: 428px) {
+  .divflexibility {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 320px;
+  }
+}
+.portion4 {
+  margin-top: -35px;
+  width: 100%;
+  height: 80vh;
+@media screen and (max-width:780px) {
+  margin-top:-31px;
+}
+}
+.contactus {
+  max-width: 100%;
+  width: 346px;
+  height: 44px !important;
+  color: $Tertiary-color !important;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: calc(14px + (64 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  font-weight: 700;
+  line-height: 64px;
+  display: flex;
+  justify-content: center;
+}
+.leaverequest{
+  width: 130px;
+height: 1%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+font-size: calc(14px + (18 - 8) * (100vw - 320px) / ( 1440 - 320)) !important;
+font-weight: 500;
+line-height: 18px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+@media screen and (max-width:430px) {
+  margin-left:-65px;
+  margin-top: -20px;
+  font-size: 10px !important;
+}
+}
+.flexdiv{
+  display: flex;
+justify-content: center;
+gap: 60px;
+ width: 100%;
+}
+.lastportionmaindiv{
+ 
+   border: none;
+  width: 60%;
+  height: 90%;
+  margin: 0 auto;
+background: $Primary-color;
+border-bottom-left-radius: 35px;
+border-bottom-right-radius: 35px;
+@media screen and (max-width:430px) {
+  height: fit-content;
+}
+}

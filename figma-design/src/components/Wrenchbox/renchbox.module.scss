@@ -1,0 +1,28 @@
+.rectangle {
+    width: 52.12px;
+    height: 52.12px;
+    border-radius: 20px;
+     border: 2px solid #ffff; 
+     transform: rotate(45deg); 
+     display: flex;
+     align-items: center;
+    justify-content: center;
+  }
+  
+.wrench{  
+    width: 30.77px;
+    height: 30.77px;
+    transform: rotate(320deg);
+    
+
+}
+.p{
+    width: 91px;
+height: 22px;
+font-family: Poppins;
+font-size: 11px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+color: #ffff;
+}

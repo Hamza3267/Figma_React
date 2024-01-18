@@ -1,0 +1,103 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.blackdiv{
+  height: 30px;
+  width: 100%;
+  background: black;
+  z-index: 1;
+  position: relative;
+}
+.main1{
+  display:flex;
+  align-items: center;
+}
+.main {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding-top: 2%;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.logoimg {
+  width: 10%;
+}
+
+.link {
+  display: flex;
+  gap: 10%;
+}
+
+.name {
+   @include fontbody;
+  // font-size:15px ;
+   font-weight: 500;
+  line-height: 40px;
+  text-decoration: none;
+  color: #555555;
+}
+.optionsBox {
+  position: absolute;
+  z-index: 0;
+  background: $Tertiary-color;
+  border-radius: 10px;
+  line-height: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+.nam {
+  display: grid;
+  @include fonth6;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration: none;
+  color: $fifth-color;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.list{
+  @include fonth6;
+  font-weight: 500;
+  line-height: 10px;
+  text-decoration: none;
+  color: $fifth-color;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.optionBox {
+  display: grid;
+  width: 40%;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  z-index: 0;
+  background: $Tertiary-color;
+  border-radius: 10px;
+  line-height: 5px;
+  padding: 1%;
+  gap: 1px;
+  cursor: pointer;
+}
+.buton{
+  display: flex;
+  padding-top: 2%;
+  padding-right: 2%;
+  width: 30%;
+}
+.butondiv{
+  width:100%;
+  z-index: 1;
+}
+.btn{
+color: $fifth-color !important;
+  background: none !important;
+  font-size: calc(11px + (16 - 11) * (100vw - 320px) / (1440 - 320)) !important;
+  &:hover{
+    color:$Primary-color !important;
+  }
+} 

@@ -1,0 +1,39 @@
+.main {
+  margin-top: 40px;
+  display: flex;
+  width: 650px;
+  height: 400px;
+  margin-left: 90px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.h3 {
+  font-size: 25px;
+  cursor: pointer;
+  height: 50px;
+  color: gray;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.titlee {
+  border: 1px solid gray;
+  height: 50px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.h3:hover {
+  color: #fbc02d;
+}
+
+.para {
+  width: 620px;
+  font-size: 25px;
+  margin-top: 50px;
+}/*# sourceMappingURL=tab.module.css.map */

@@ -1,0 +1,31 @@
+@import '../../page/bycyclepage/color.module.scss';
+@import '../../page/bycyclepage/fontsize.scss';
+
+.flexbox{
+  display: flex;
+  gap: 1%;
+ 
+}
+ .pic {
+    max-width: 90px;
+    max-height: 61px; 
+  }
+
+.text { 
+    color: $Primary-color;
+    @include fonth2;
+    font-weight: 700;
+    margin: 0 auto;  
+  }
+
+  .txt{
+    color: $Primary-color;
+    @include fontpNew;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    margin: 0 auto;
+    // padding: 0% 0% 6% 0%;
+    
+  }
+
+  

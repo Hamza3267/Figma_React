@@ -1,0 +1,33 @@
+@import "../../page/bycyclepage/color.module.scss";
+@import "../../page/bycyclepage/fontsize.scss";
+
+
+.btn {
+    border-radius: 42px;
+    width: 36%;
+    height: 46px;
+    border: none;
+    @include fonth6;
+    font-weight: 700;
+    line-height: 22px;
+    color: $Tertiary-color;
+    background-color: $Primary-color;
+    margin-top: 10px;
+    @media only screen and (max-width: 1038px) {
+     
+      margin-top: 50px !important;
+    }
+    @media only screen and (max-width: 780px) {
+      width: 66% !important;
+       height: 24px;
+       font-size: 12px !important;
+      margin-top: 50px !important;
+    }
+    @media only screen and (max-width: 450px) {
+      width: 50% !important;
+       height: 20px;
+       font-size: 6px !important;
+      margin-top: -50px !important;
+    }
+  }
+  

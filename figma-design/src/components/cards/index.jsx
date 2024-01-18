@@ -65,17 +65,15 @@ const Card = () => {
             <div className={style.cardflex}>
                 {card.map((e, index) => (
                     <div
-                        className={style.border}
-
-                        key={index}
-                    >
+                    className={`${style.border} ${clickedButtonIndex === index ? style.clickedCard : ''}`}
+                    key={index}>
+                        
                         <img src={Fruit} alt="" className={style.pic} />
                         <Text title={e.title} textClass={style.txt} />
                         <Text title={e.tittle} textClass={style.price} />
                         {console.log(clickedButtonIndex)}
                         <Button
                             title={e.titttle}
-                            // btnClass={`${clickedButtonIndex === index ? style.buttonClicked : style.button}`}
                             btnClass={style.button}
                             onClick={() => handleButtonClick(index)}
                         />

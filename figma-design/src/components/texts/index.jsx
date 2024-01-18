@@ -4,7 +4,6 @@ const Text = ({title,textClass}) => {
   return (
     <div className={style.flex}>
       <p className={`${style.txt} ${textClass}`}>{title}</p>
-     
     </div>
   )
 }
