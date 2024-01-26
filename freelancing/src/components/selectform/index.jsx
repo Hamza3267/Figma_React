@@ -87,7 +87,7 @@ const Selectform = ({
         </button>
       </div>
       <div style={{ borderBottom: "0.5px solid #e5e5e5" }}>
-        <h4 className={style.label}>{"Rating"}</h4>
+        <h4 className={style.label}>{"RATING"}</h4>
         {formitems.map((e, index) => (
           <div className={style.inputfield} key={index}>
             <div className={style.checkboxLabel}>
@@ -105,7 +105,7 @@ const Selectform = ({
           </div>
         ))}
       </div>
-      <h4 className={style.label}>{"Locations"}</h4>
+      <h4 className={style.label}>{"LOCATIONS"}</h4>
       <div className={style.selectoptions}>
         <select
           {...register("country")}
@@ -162,7 +162,7 @@ const Selectform = ({
           <option value="russia">RUSSIA</option>
         </select>
       </div>
-      <h4 className={style.label}>{"Range"}</h4>
+      <h4 className={style.label}>{"RANGE"}</h4>
       <div className={style.numbox}>
         <label htmlFor="range100200" className={style.checkboxLabel}>
           <input
@@ -216,12 +216,15 @@ const Selectform = ({
       </div>
       <h4 className={style.label}>{"Founded Date"}</h4>
       <div className={style.progress}>
-        <progress 
+
+        <input 
+        type="range"
         className={style.progressbarr}
+        
          {...register("progresss")}
-        value="100" 
-        max="100" 
+      
         />
+      
       </div>
     </form>
   );

@@ -63,25 +63,44 @@ padding: 10px;
 
   }
 }
-
+// .imgediting{
+  
+//   background: url(../../assets/images/plus-icon.svg)
+//   no-repeat 11.5px center;
+//   &:hover{
+//     background: url(../../assets/images/plus-icongreen.svg)
+//     no-repeat 11.5px center;
+//   }
+// }
 .flexitem {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+// .imgedit{
+//   background: url(../../assets/images/plus-icon.svg)
+//   no-repeat 1px center;
+//   &:hover{
+//     background: url(../../assets/images/plus-icongreen.svg)
+//     no-repeat 1px center;
+    
+//   }
+// }
 .butttonsetting{
   font-size: 15px;
   color: $Primary-color;
-  background: $Tertiary-color;
+   background: $Tertiary-color;
   gap: 10px;
   border: 1px solid ;
   &:hover{
     color:$Tertiary-color;
   }
+
 }
+
 .btndivsetting{
-  width: 30%;
+  width: 100%; 
+
 }
 .ptextss{
   @include font18;

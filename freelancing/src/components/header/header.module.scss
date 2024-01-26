@@ -1,16 +1,14 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.blackdiv{
-  height: 30px;
-  width: 100%;
-  background: black;
-  z-index: 1;
-  position: relative;
-}
-.main1{
-  display:flex;
+.main1 {
+  padding-left: 3%;
+  width: 95%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #e5e5e5;
+  padding-bottom: 1%;
 }
 .main {
   display: flex;
@@ -20,11 +18,10 @@
   width: 80%;
   position: relative;
   z-index: 1;
-  
 }
 
 .logoimg {
-  width: 10%;
+  width: 90%;
 }
 
 .link {
@@ -33,9 +30,9 @@
 }
 
 .name {
-   @include fontbody;
-  // font-size:15px ;
-   font-weight: 500;
+  @include fontbody;
+  width: 100%;
+  font-weight: 500;
   line-height: 40px;
   text-decoration: none;
   color: #555555;
@@ -43,6 +40,7 @@
 .optionsBox {
   position: absolute;
   z-index: 0;
+  width: 150px;
   background: $Tertiary-color;
   border-radius: 10px;
   line-height: 5px;
@@ -60,7 +58,7 @@
     color: $Primary-color;
   }
 }
-.list{
+.list {
   @include fonth6;
   font-weight: 500;
   line-height: 10px;
@@ -83,21 +81,62 @@
   gap: 1px;
   cursor: pointer;
 }
-.buton{
+.buton {
   display: flex;
+  gap: 20px;
   padding-top: 2%;
-  padding-right: 2%;
   width: 30%;
 }
-.butondiv{
-  width:100%;
+.butondiv {
+  width: 100% !important;
   z-index: 1;
 }
-.btn{
-color: $fifth-color !important;
+.btn {
+  color: $fifth-color !important;
   background: none !important;
   font-size: calc(11px + (16 - 11) * (100vw - 320px) / (1440 - 320)) !important;
-  &:hover{
-    color:$Primary-color !important;
+  &:hover {
+    color: $Primary-color !important;
   }
-} 
+}
+.bundiv {
+  width: 100px !important;
+}
+.divheadersetting {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  margin-left: 285px;
+}
+.pname {
+  @include fontbody;
+  max-width: 100%;
+  font-weight: 500;
+  line-height: 10px;
+  text-decoration: none;
+  color: #555555;
+  cursor: pointer;
+  &:hover {
+    color: $Primary-color;
+  }
+}
+.dietting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.optionBox {
+  width: 15%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  z-index: 1;
+  background: $Tertiary-color;
+  border-radius: 10px;
+  line-height: 5px;
+  padding: 1%;
+  cursor: pointer;
+}

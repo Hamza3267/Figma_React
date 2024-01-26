@@ -5,14 +5,21 @@
     display: grid;
 }
 .checkboxLabel {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin-right: 10px; 
+    font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
   }
   
 .inputfield{
     display: grid;
     padding: 4%;
     // border-bottom: 1px solid lightgray;
+}
+.inerinput{
+    height: 15px;
+    width: 15px;
 }
 .selectoptions{
     display: grid;
@@ -22,20 +29,23 @@
     border-bottom: 1px solid lightgray;
 }
 .selectbox{
-    height: 30px;
-  border-radius: 10px;
-    width: 80%;
+    height: 48px;
+  border-radius: 6px;
+    width: 100%;
     border: 1px solid lightgray;
 }
 .numbox{
     display: grid;
+    // align-items: center;
+    gap: 7px;
     padding: 4%;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #e5e5e5;
 }
 .label{
     color:#999999;
     font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
     padding: 2%;
+    font-weight: 500;
 }
 .headerdiv{
     display: flex;
@@ -60,6 +70,27 @@
 .stara{
     width: 7%;
 }
-.progress{
+.progress {
     padding-left: 6%;
+  }
+  
+ 
+
+.progressbarr{
+    background: red;
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 100%;
+    
 }
+.progressbarr::-webkit-progress-value {
+    background-color: blanchedalmond !important; 
+  }
+
+
+
+
+  
+
+  

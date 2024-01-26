@@ -1,15 +1,12 @@
 import React from "react";
 import style from "./about.module.scss";
-import Nav from "../../components/header/header";
+import Layout from "../../components/layout/Layout";
+
 import TextMap from "../../components/textmapping";
 import Image from "../../components/img";
 import PicCard from "../../components/piccard";
 import Button from "../../components/buttons";
 import CardSlider from "../../components/cardslider";
-import mail from "../../assets/images/mailbox.png";
-import Input from "../../components/input";
-import Footer from "../../components/footer";
-import PicText from "../../components/pictextcard";
 
 import pic1 from "../../assets/images/left.webp";
 import pic2 from "../../assets/images/mid.webp";
@@ -20,8 +17,7 @@ import hoverpic3 from "../../assets/images/hoverpic3.webp";
 import build1 from "../../assets/images/building1.webp";
 import build2 from "../../assets/images/building2.webp";
 import location from "../../assets/images/graylocation.png";
-import backgroundimg from '../../assets/images/greenportion.webp'
-
+import backgroundimg from "../../assets/images/greenportion.webp";
 
 const picitems = [
   {
@@ -52,20 +48,7 @@ const numberitems = [
     para: "Awards ",
   },
 ];
-const textitem = [
-  {
-    textt: "Company",
-  },
-  {
-    textt: "Service",
-  },
-  {
-    textt: "Support",
-  },
-  {
-    textt: "Connect",
-  },
-];
+
 const hoverpicitems = [
   {
     pic: hoverpic1,
@@ -88,198 +71,158 @@ const About = () => {
     backgroundImage: `url(${backgroundimg})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    height: "350px",
   };
   return (
     <>
-      <Nav />
-      <hr class={style.borerline} />
-      <div className={style.portion1}>
-        <TextMap
-          title={"ABOUT US"}
-          paragraph={"We are transforming the way healthcare hires"}
-          titleclass={style.title}
-          paragraphclass={style.para}
-        />
-        <div className={style.mapimg}>
-          {picitems.map((e, index) => (
-            <Image img={e.img} key={index} />
-          ))}
-        </div>
-      </div>
-      <div className={style.portion2}>
-        <div className={style.textdiv}>
+      <Layout>
+        <div className={style.portion1}>
           <TextMap
-            title={"OUR MISSION"}
-            paragraph={
-              "We mission is to empower every healthcare professional to find their perfect job opportunity, faster and easier than ever before."
-            }
+            title={"ABOUT US"}
+            paragraph={"We are transforming the way healthcare hires"}
             titleclass={style.title}
-            paragraphclass={style.para2}
+            paragraphclass={style.para}
           />
-        </div>
-      </div>
-      <div className={style.divcont}>
-        <div className={style.nummap}>
-          {numberitems.map((e, index) => (
-            <div className={style.innermapdiv}>
-              <TextMap
-                key={index}
-                title={e.num}
-                paragraph={e.para}
-                titleclass={style.editingtext}
-                paragraphclass={style.editingpara}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className={style.portion3}>
-        <TextMap
-          title={"OUR LEADERS"}
-          paragraph={"Championing change across our company"}
-          titleclass={style.title}
-          paragraphclass={style.para}
-        />
-        <div className={style.picbutonflex}>
-          <div className={style.mappingcard}>
-            {hoverpicitems.map((e, index) => (
-              <PicCard
-                pic={e.pic}
-                date={e.date}
-                para={e.para}
-                datesetting={style.date}
-                paragraphsetting={style.paragraph}
-                maincontainer={style.maindivv}
-                picborder={style.borderppic}
-                key={index}
-              />
+          <div className={style.mapimg}>
+            {picitems.map((e, index) => (
+              <Image img={e.img} key={index} />
             ))}
           </div>
         </div>
-        <div className={style.btndivset}>
-          <Button
-            title={"View Full Team"}
-            btndiv={style.btndi}
-            btnClass={style.btnedit}
-          />
-        </div>
-      </div>
-      <div className={style.portion4}>
-        <TextMap
-          title={"PEOPLE LOVE US"}
-          paragraph={"What our customers says"}
-          titleclass={style.title}
-          paragraphclass={style.para}
-        />
-        <div className={style.cardslide}>
-          <CardSlider />
-        </div>
-      </div>
-      <div className={style.portion5}>
-        <div className={style.p5subdiv}>
-          <div className={style.textwidth}>
+        <div className={style.portion2}>
+          <div className={style.textdiv}>
             <TextMap
-              title={"OUR LOCATIONS"}
-              paragraph={"Find us at our global hubs"}
-              titleclass={style.title}
-              paragraphclass={style.para}
-            />
-            <Button
-              title={"Chicago"}
-              btnimg={location}
-              btndiv={style.picbtnwidth}
-              btnClass={style.picbtnseting}
-            />
-            <TextMap paragraph={"8205 Santa Monica Blvd Suite 84561, CA 90069"} 
-              paragraphclass={style.txtpara}
-            />
-            <Button
-              title={"Amsterdam"}
-              btnimg={location}
-              btndiv={style.picbtnwidth}
-              btnClass={style.picbtnseting}
-            />
-              <TextMap paragraph={"8205 Santa Monica Blvd Suite 84561, CA 90069"} 
-              paragraphclass={style.txtpara}
-            />
-          </div>
-
-          <div className={style.buidimgdiv}>
-            <Image img={build1} imgsetting={style.imgwidth} />
-            <Image img={build2} imgsetting={style.imgwidth} />
-          </div>
-        </div>
-      </div>
-      <div style={overlaystyle}>
-        <div className={style.textmapp}>
-      <TextMap
-          title={"WE CAN’T WAIT TO MEET YOU!"}
-          paragraph={"Join us as we transform healthcare hiring — one job at a time."}
-          titleclass={style.lasttitle}
-          paragraphclass={style.lastpara}
-        />
-        </div>
-         <div className={style.btndivset}>
-          <Button
-            title={"See opening jobs"}
-            btndiv={style.btndsett}
-            btnClass={style.btninnerset}
-          />
-        </div>
-      </div>
-      <div className={style.lastportion}>
-      <hr class={style.borerline} />
-        <div className={style.divportion10flex}>
-          <PicText
-            title={"Subscribe to our newsletter"}
-            paragraph={"We'll keep you updated with the best new jobs."}
-            logo={mail}
-            titledit={style.titleditting}
-            paraedit={style.paragraaph}
-            imgdivedit={style.background}
-            pictureedit={style.picsetting}
-            maindivedit={style.maindivediting}
-          />
-          <div className={style.butontexteit}>
-            <Input />
-            <Button title={"Subscribe"} btndiv={style.btndivedit} />
-          </div>
-        </div>
-        <hr class={style.borerline} />
-      </div>
-      <div className={style.footer}>
-        <div className={style.subdivision}>
-          <div className={style.textmapedit}>
-            <TextMap
-              title={"About Us"}
+              title={"OUR MISSION"}
               paragraph={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris risus, lobortis a commodo at, varius sit amet ipsum."
+                "We mission is to empower every healthcare professional to find their perfect job opportunity, faster and easier than ever before."
               }
-              desc={"T. (00) 658 54332 E. hello@uxper.co"}
-              titleclass={style.t}
-              paragraphclass={style.p}
-              descclass={style.d}
+              titleclass={style.title}
+              paragraphclass={style.para2}
             />
           </div>
-          <div className={style.mapediting}>
-            <div className={style.footersub}>
-              {textitem.map((e, index) => (
-                <div className={style.textmap}>
-                  <p key={index}>{e.textt}</p>
-                </div>
+        </div>
+        <div className={style.divcont}>
+          <div className={style.nummap}>
+            {numberitems.map((e, index) => (
+              <div className={style.innermapdiv}>
+                <TextMap
+                  key={index}
+                  title={e.num}
+                  paragraph={e.para}
+                  titleclass={style.editingtext}
+                  paragraphclass={style.editingpara}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className={style.portion3}>
+          <TextMap
+            title={"OUR LEADERS"}
+            paragraph={"Championing change across our company"}
+            titleclass={style.title}
+            paragraphclass={style.parag}
+          />
+          <div className={style.picbutonflex}>
+            <div className={style.mappingcard}>
+              {hoverpicitems.map((e, index) => (
+                <PicCard
+                  pic={e.pic}
+                  date={e.date}
+                  para={e.para}
+                  datesetting={style.date}
+                  paragraphsetting={style.paragraph}
+                  maincontainer={style.maindivv}
+                  picborder={style.borderppic}
+                  key={index}
+                />
               ))}
             </div>
-            <Footer />
+          </div>
+          <div className={style.btndivset}>
+            <Button
+              title={"View Full Team"}
+              btndiv={style.btndi}
+              btnClass={style.btnedit}
+            />
           </div>
         </div>
-        <hr class={style.borerline} />
-        <div className={style.lastdiv}>
-          <TextMap
-            paragraph={"© 2023 Uxper. All Right Reserved."}
-            paragraphclass={style.p}
-          />
+        <div className={style.portion4}>
+          <div className={style.portion4subdiv}>
+            <TextMap
+              title={"PEOPLE LOVE US"}
+              paragraph={"What our customers says"}
+              titleclass={style.title}
+              paragraphclass={style.paradesc}
+            />
+          </div>
+          <div className={style.cardslide}>
+            <CardSlider arrowst={style.settingarrow} />
+          </div>
         </div>
-      </div>
+        <div className={style.portion5}>
+          <div className={style.p5subdiv}>
+            <div className={style.textwidth}>
+              <TextMap
+                title={"OUR LOCATIONS"}
+                paragraph={"Find us at our global hubs"}
+                titleclass={style.titltle}
+                paragraphclass={style.paradescribe}
+              />
+              <div className={style.settingsdivbuton}>
+                <Button
+                  title={"Chicago"}
+                  btnimg={location}
+                  btndiv={style.picbtnwidth}
+                  btnClass={style.picbtnseting}
+                />
+                <TextMap
+                  paragraph={"8205 Santa Monica Blvd Suite 84561, CA 90069"}
+                  paragraphclass={style.txtpara}
+                />
+
+                <Button
+                  title={"Amsterdam"}
+                  btnimg={location}
+                  btndiv={style.picbtnwidth}
+                  btnClass={style.picbtnseting}
+                />
+                <TextMap
+                  paragraph={"8205 Santa Monica Blvd Suite 84561, CA 90069"}
+                  paragraphclass={style.txtpara}
+                />
+              </div>
+            </div>
+
+            <div className={style.buidimgdiv}>
+              <Image img={build1} imgsetting={style.imgwidth} />
+              <Image img={build2} imgsetting={style.imgwidth} />
+            </div>
+          </div>
+        </div>
+        <div style={overlaystyle}>
+          <div className={style.alsttt}>
+            <div className={style.textmapp}>
+              <TextMap
+                title={"WE CAN’T WAIT TO MEET YOU!"}
+                paragraph={
+                  "Join us as we transform healthcare hiring — one job at a time."
+                }
+                titleclass={style.lasttitle}
+                paragraphclass={style.lastpara}
+              />
+            </div>
+            <div className={style.btndivsett}>
+              <Button
+                title={"See opening jobs"}
+                btndiv={style.btndsett}
+                btnClass={style.btninnerset}
+              />
+            </div>
+          </div>
+        </div>
+     
+      </Layout>
     </>
   );
 };

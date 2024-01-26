@@ -38,7 +38,7 @@ const carditems=[
     para:"designer at shopify"
   },
 ];
-const CardSlider = () => {
+const CardSlider = ({arrowst}) => {
  const [currentIndex, setCurrentIndex] = useState(0);
 const [isMouseOver, setIsMouseOver] = useState(false);
 
@@ -78,7 +78,7 @@ return (
  ))}
 </div>
     {isMouseOver && (
-      <div className={style.arrows}>
+      <div className={`${style.arrows} ${arrowst}`}>
         <img
           src={Leftarrow}
           alt=""

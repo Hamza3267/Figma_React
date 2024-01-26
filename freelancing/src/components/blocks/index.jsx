@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import style from "./block.module.scss";
 import Fruit from "../../assets/images/smile.png";
 import Button from "../buttons";
@@ -9,46 +10,47 @@ import Image from "../img";
 import star from "../../assets/images/star.png";
 import grid from "../../assets/images/grid.png";
 import list from "../../assets/images/list.png";
+import svg from '../../assets/images/plus-icon.svg'
 
 const slides = [
   {
     p: Fruit,
-    text: "hamza",
+    text: "bamide",
     txt: "Uxper is the first design and hosting platform built from the ground up for the mobile age. It is the only hosted service that allows…		",
     texts: "12",
     rating: "5",
   },
   {
     p: Fruit,
-    text: "hamza",
+    text: "Hamza",
     txt: "We're the world’s largest startup community. We help startups change the world. At AngelList, we…	",
     texts: "1",
     rating: "4",
   },
   {
     p: Fruit,
-    text: "hamza",
+    text: "Saad",
     txt: "We're the world’s largest startup community. We help startups change the world. At AngelList, we…	",
     texts: "2",
     rating: "4",
   },
   {
     p: Fruit,
-    text: "hamza",
+    text: "Nimra",
     txt: "We're the world’s largest startup community. We help startups change the world. At AngelList, we…	",
     texts: "3",
     rating: "3",
   },
   {
     p: Fruit,
-    text: "hamza",
+    text: "Faizan",
     txt: "We're the world’s largest startup community. We help startups change the world. At AngelList, we…	",
     texts: "8",
     rating: "2",
   },
   {
     p: Fruit,
-    text: "hamza",
+    text: "Ramsha",
     txt: "We're the world’s largest startup community. We help startups change the world. At AngelList, we…	",
     texts: "22",
     rating: "1",
@@ -64,10 +66,14 @@ const CardSlider = ({
   flexx,
   buttons,
   carousall,
+  dots,
+ 
 }) => {
+  const navigate = useNavigate();
   const totalSlides = slides.length;
   const [currentIndex, setIndex] = useState(0);
   const [viewMode, setViewMode] = useState("grid");
+  const [cardName, setCardName] = useState("");
   const isArray = Array.isArray(selectedValue);
   const filteredSlides =
     isArray && selectedValue.length > 0
@@ -81,15 +87,21 @@ const CardSlider = ({
   const handleGrid2 = () => {
     setViewMode("flex");
   };
-
+  const handleClick = (text) => { 
+    setCardName(text);
+    navigate('/infocompany', { state: { cardName: text } });
+  };
+  console.log(cardName);
   return (
     <>
       <div className={`${style.carousel} ${carousall}`}>
         <div className={style.companieslist}>
-          <text className={style.textedit}>
-            {" "}
-            {filteredSlides.length} Companies
-          </text>
+         
+            <text className={style.textedit}>
+              {" "}
+              {filteredSlides.length} Companies
+            </text>
+          
           {buttons && (
             <div>
               <img
@@ -115,7 +127,7 @@ const CardSlider = ({
           style={{ transform: `translateX(-${currentIndex * 390}px)` }}
         >
           {filteredSlides.map((slide, index) => (
-            <div key={index} className={`${style.icon} ${boxset} ${gridMode}`}>
+            <div key={index} className={`${style.icon} ${boxset} ${gridMode}`}  onClick={() => handleClick(slide.text)}>
               <div>
                 <div
                   className={`${
@@ -166,15 +178,19 @@ const CardSlider = ({
                         </div>
                       </div>
                     </div>
-
+                      {/* <SvgButton 
+                      title={"Follow"}
+                      imgset={style.imgedit}
+                      /> */}
+                      <div>
                     <Button
-                   
-                      btnsvg={true}
+                     imgset={style.imgediting}
+                       btnimg={svg}
                       btnClass={style.butttonsetting}
                       btndiv={style.btndivsetting}
                       title={"Follow"}
                     />
-                  
+                    </div>
                   </div>
                 </div>
               </div>
@@ -197,17 +213,19 @@ const CardSlider = ({
             </div>
           ))}
         </div>
-        <div className={style.dotsContainer}>
-          {Array.from({ length: totalSlides / 2 + 1 }).map((_, dotIndex) => (
-            <div
-              key={dotIndex}
-              className={`${style.dot} ${
-                dotIndex === currentIndex ? style.activeDot : ""
-              }`}
-              onClick={() => setIndex(dotIndex)}
-            />
-          ))}
-        </div>
+        {dots && (
+          <div className={style.dotsContainer}>
+            {Array.from({ length: totalSlides / 2 + 1 }).map((_, dotIndex) => (
+              <div
+                key={dotIndex}
+                className={`${style.dot} ${
+                  dotIndex === currentIndex ? style.activeDot : ""
+                }`}
+                onClick={() => setIndex(dotIndex)}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

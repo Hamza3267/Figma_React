@@ -62,6 +62,8 @@
     gap: 5px;
 }
 .p{
+    font-size: calc(14px + (15 - 10) * (100vw - 445px) / (1440 - 445)) !important;
+    color: #111111;
     font-weight: 500;
     cursor: pointer;
     &:hover{
@@ -69,4 +71,7 @@
         
     }
 }
-
+.pop{
+    font-size: calc(14px + (15 - 10) * (100vw - 445px) / (1440 - 445));
+    color: #555555;
+}

@@ -13,7 +13,7 @@
 .maincontainer{
     padding: 2%;
 width: 550px;
-height: 200px;
+height: max-content;
 border: 1px solid rgba(252,185,0,1) ;
 display: flex;
 flex-direction: column;
@@ -70,7 +70,7 @@ transition: box-shadow 0.3s ease;
     gap: 10px;
 }
 .buttonwidth{
-    width: 20%;
+    width: 100%;
    
     padding-left: 10px;
 }
@@ -81,7 +81,7 @@ transition: box-shadow 0.3s ease;
     
 }
 .picbtnwidth{
-    width: 20%;
+    width: 100%;
  
 }
 .picbtnseting{
@@ -92,16 +92,21 @@ transition: box-shadow 0.3s ease;
 .btnflex{
     display: flex;
     gap: 10px;
-}
-.buttonwid{
-    width: 26%;
     
 }
+.buttonwid{
+    width: 100%;
+    
+}
+.btnwidths{
+    width: 80%;
+   
+}
 .lasttext{
-    padding: 1% 0% 2% 3%;
+    padding: 3% 0% 2% 1%;
+    width: 100%;
     font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320));
     font-weight: 500;
-   
     color:rgb(117, 115, 115);
 }
 .dotsContainer {

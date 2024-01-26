@@ -44,7 +44,7 @@ const CountrySearch = () => {
       </div>
 
       <div className={style.flexdiv}>
-        <p>Popular Searches:</p>
+        <p className={style.pop}>Popular Searches:</p>
         <p className={style.p}>Data Visualization,</p>
         <p className={style.p}>Business Manager</p>
       </div>

@@ -1,11 +1,12 @@
 import React from 'react'
 import style from './button.module.scss'
-import Svg from '../svg/svg'
-const Button = ({ title, btnClass,btndiv, btnimg,btnsvg}) => {
+
+const Button = ({ title, btnClass,btndiv, btnimg,imgset,onClick}) => {
   return (
     <div className={`${style.buttonedits} ${btndiv}`}>
-      <button className={`${style.btn} ${btnClass}`} >
-      {btnimg && <img src={btnimg} alt='' className={style.img}/> }{btnsvg && <Svg />}{title}</button>
+      <button className={`${style.btn} ${btnClass}`} onClick={onClick} >
+        
+      {btnimg && <img src={btnimg} alt='' className={`${style.img} ${imgset}`}/> }{title}</button>
       
     </div>
   )

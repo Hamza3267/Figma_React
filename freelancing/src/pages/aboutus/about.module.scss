@@ -1,19 +1,72 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
+
+.blackdiv{
+  height: 30px;
+  width: 98%;
+  background: black;
+  z-index: 2;
+  // position: fixed;
+  display: flex;
+  padding-left: 2%;
+  align-items: center;
+}
+.firstbell{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nameee{
+  width: 100%;
+}
+.flextop{
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navset{
+  padding-left: 3%;
+  padding-bottom: 2% ;
+  border-bottom:0.5px solid #e5e5e5 ;
+}
+.portion1{
+  padding-top: 3%;
+}
 .portion2 {
   height: 80px;
 }
 .title {
-  @include font18;
+  @include fontbody;
   font-weight: 600;
+  letter-spacing: 0.5px;
   text-align: center;
-  line-height: 30px !important;
+  line-height: 10px !important;
+}
+.parag{
+  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
+
+width: 40%;
+text-align: center;
+margin: 0 auto;
+  color: #111111;
+  font-weight: 700 !important;
+  line-height: 1;
 }
 .para {
-  @include font26;
+  font-size: calc(24px + (32 - 24) * (100vw - 445px) / (1440 - 445));
   color: $eight-color;
-  font-weight: 700;
+   font-weight: 500;
   text-align: center;
 }
 .mapimg {
@@ -29,7 +82,7 @@
   padding: 6%;
 }
 .para2 {
-  @include font22;
+  font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1440 - 320));
   color: $eight-color;
   font-weight: 400;
   text-align: center;
@@ -70,8 +123,15 @@
   }
 }
 .editingtext {
-  font-size: calc(32px + (62 - 32) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(18px + (48 - 18) * (100vw - 445px) / (1440 - 445)) !important;
   color: $Primary-color !important;
+  font-weight: 500;
+}
+.editingpara{
+  font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320)) !important;
+  text-align: center;
+  font-weight: 500;
+  color: #111111;
 }
 
 .portion3 {
@@ -115,7 +175,8 @@
 .btndivset {
   display: flex;
   justify-content: center;
-  padding: 2%;
+   padding: 2%;
+
 }
 .btnedit {
   font-size: calc(12px + (18 - 12) * (100vw - 320px) / (1440 - 320));
@@ -130,6 +191,24 @@
   background: #f8f9fc;
   height: 500px;
 }
+.portion4subdiv{
+  padding-top: 4%;
+}
+.paradesc{
+  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
+  color: #111111;
+  text-align: center;
+  line-height: 1;
+  font-weight: 500;
+}
+.settingarrow{
+  position: absolute;
+  top: 30% !important;
+  transform: translateY(-100%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .cardslide {
   display: flex;
   justify-content: center;
@@ -137,17 +216,21 @@
   overflow: hidden;
 }
 .portion5 {
-  height: 500px;
-  padding: 5%;
+  height: max-content;
+   padding-top: 5%;
   .p5subdiv {
+    width: 100%;
     display: flex;
-      justify-content: center;
+       justify-content: space-around;
      align-items: center;
-     gap: 50px;
+    
+      
 
     .textwidth {
      
-      height: 400px;
+      // height: 400px;
+     
+        padding-left: 3%;
     }
   }
   .buidimgdiv {
@@ -156,20 +239,39 @@
  
   }
 }
+.settingsdivbuton{
+ 
+  margin-top: -40px;
+ 
+}
+.titltle{
+  font-size: calc(14px + (16 - 14) * (100vw - 445px) / (1440 - 445));
+  font-weight: 500;
+  line-height: 2;
+}
+.paradescribe{
+  font-size: calc(18px + (29 - 18) * (100vw - 320px) / (1440 - 320));
+  color: #111111;
+  width: 55%;
+  line-height: 1;
+  font-weight: 600;
+}
 .imgwidth {
-  height: 500px;
+  height: 550px;
 }
 
 .picbtnwidth {
-  width: 50%;
+  width: fit-content;
+ 
 }
 .picbtnseting {
+
   background: none;
   // border: 1px solid red;
   color: black;
-  height: 1px;
+  margin-left: -10px;
   font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320));
-  gap: 10px !important;
+  gap: 5px !important;
   border: none !important;
   font-weight: 600;
   &:hover {
@@ -179,20 +281,31 @@
 .txtpara{
   font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320));
   width: 60%;
-  line-height: 20px;
-  padding-left: 18%;
-  margin-top: -25px;
+   line-height: 1;
+    padding-left: 5%;
+   margin-top: -55px;
+}
+.btndivsett {
+  display: flex;
+  justify-content: center;
+}
+.alsttt{
+  padding-top: 5%;
 }
 .lasttitle{
   font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320));
   color: $Tertiary-color;
   font-weight: 500;
   text-align: center;
+  line-height: 1;
 }
 .lastpara{
-  font-size: calc(24px + (32 - 24) * (100vw - 445px) / (1440 - 445));
-
+  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445));
  text-align: center !important;
+ font-weight: 500;
+ width: 80%;
+ margin: 0 auto;
+ line-height: 1;
   color: $Tertiary-color;
 }
 
@@ -214,7 +327,9 @@
   align-items: center;
 
 }
-
+.lastportion{
+  border-top:0.5px solid #e5e5e5 ;
+}
 .divportion10flex {
   display: flex;
   padding: 6%;
@@ -234,6 +349,7 @@
   grid-template-columns: repeat(4, 1fr);
   width: 30%;
 }
+
 .footersub {
   display: flex;
 }
@@ -269,6 +385,7 @@
   }
 }
 .lastdiv {
+  border-top:0.5px solid #e5e5e5 ;
   padding-left: 3%;
 }
 .background {
@@ -280,3 +397,10 @@
   width: 60px !important;
   height: 50px !important;
 }  
+ .footer{
+  border-top:0.5px solid #e5e5e5 ;
+}
+.lastportion{
+  
+  border-top:0.5px solid #e5e5e5 ;
+}

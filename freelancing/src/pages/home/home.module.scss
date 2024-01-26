@@ -1,7 +1,17 @@
 @import "../../styles/color.module.scss";
 @import "../../styles/fontsize.scss";
 
-.blackdiv{
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+.imgggg {
+  height: 250px;
+  width: 250px;
+}
+.blackdiv {
   height: 30px;
   width: 98%;
   background: black;
@@ -11,9 +21,30 @@
   padding-left: 2%;
   align-items: center;
 }
+.firstbell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nameee {
+  width: 100%;
+}
+.flextop {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
 .subdiv {
   margin-left: 5%;
-  padding-top:1% ;
   @media screen and (max-width: 500px) {
     display: flex;
     flex-direction: column;
@@ -25,13 +56,11 @@
   display: flex;
   justify-content: flex-start;
 }
-
 .flextextcomponent {
   width: 55%;
 }
 .portion2 {
   height: 150px;
-
   display: grid;
   align-items: center;
   justify-content: center;
@@ -55,37 +84,35 @@
 .portion3 {
   height: max-content;
   display: flex;
-  // width: 70%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .borderedit {
-  background: $Primary-color !important;
-  width: 40px !important;
-  height: 40px !important;
- 
+  background:#007456 !important;
+  width: 60px !important;
+  height: 60px !important;
 }
-.pictext{
+.pictext {
   gap: 10px !important;
 }
-.titleeee{
+.titleeee {
   font-size: calc(8px + (20 - 8) * (100vw - 320px) / (1440 - 320)) !important;
   font-weight: 600 !important;
   line-height: 10px;
   padding-top: 5%;
 }
-.paraed{
+.paraed {
   font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1440 - 320)) !important;
 }
-.picediting{
-  height: 20px !important;
+.picediting {
+  height: 30px !important;
 }
 .mapdiv {
   border-radius: 20px;
-  height: 110px;
+  height: 130px;
   display: flex;
-  width: 320px;
+  width: 350px;
   align-items: center;
   padding-left: 6%;
   background: #edf2ef;
@@ -99,8 +126,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-
-
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: repeat(2, 1fr);
@@ -137,12 +162,11 @@
   display: flex;
   justify-content: center;
 }
-.divwidth{
+.divwidth {
   padding: 2.5%;
 }
-.carosaldivset{
+.carosaldivset {
   display: flex !important;
- 
 }
 .portion5 {
   background: #f9f9f9;
@@ -152,27 +176,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //  border: 1px solid red;
   width: 90%;
   margin: 0 auto;
 }
 .portion6 {
   background: #faf6eb;
-  // height: 500px;
-}
-.picedit {
-  // padding: 10%;
 }
 .flexsubdiv {
   display: flex;
   padding: 6%;
 }
 .textmapping {
-  padding-left: 2%;
+  padding-left: 5%;
   width: 50%;
 }
 .tittleedit {
+  font-size: calc(20px + (28 - 20) * (100vw - 445px) / (1440 - 445)) !important;
   line-height: 30px !important;
+}
+.paraeedit{
+  font-size: calc(14px + (18 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  color: #555555 !important;
+  line-height: 30px !important;
+  margin-top: 60px;
 }
 .paraedit {
   margin-top: 60px;
@@ -181,11 +207,24 @@
 .nummap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+ 
+//  height: 250px;
+width: 90%;
+margin: 0 auto;
+}
+.innerdiv{
+  width: 100%;
 }
 .editingtext {
-  font-size: calc(32px + (42 - 32) * (100vw - 445px) / (1440 - 445)) !important;
+  font-size: calc(32px + (46 - 32) * (100vw - 445px) / (1440 - 445)) !important;
   color: $Primary-color !important;
   margin: 0 auto;
+  // line-height: 1;
+}
+.editingpara{
+  font-size: calc(14px + (20 - 14) * (100vw - 445px) / (1440 - 445)) !important;
+  //  line-height: 2;
+   margin-top: 30px;
 }
 .btndivedit {
   width: 45% !important;
@@ -195,9 +234,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   height: 500px;
-  //  width: 100%;
   overflow: hidden;
 }
 .edittitle {
@@ -300,6 +337,9 @@
 .maindivediting {
   gap: 30px !important;
 }
+.portion10 {
+  border-top: 0.5px solid #e5e5e5;
+}
 .divportion10flex {
   display: flex;
   padding: 6%;
@@ -319,6 +359,9 @@
   grid-template-columns: repeat(4, 1fr);
   width: 30%;
 }
+.footer {
+  border-top: 0.5px solid #e5e5e5;
+}
 .footersub {
   display: flex;
 }
@@ -328,9 +371,6 @@
 }
 .textmapedit {
   width: 40%;
-}
-.mapediting {
-  // padding-left: 1%;
 }
 .t {
   font-size: calc(12px + (18 - 12) * (100vw - 445px) / (1440 - 445)) !important;
@@ -354,5 +394,6 @@
   }
 }
 .lastdiv {
+  border-top: 0.5px solid #e5e5e5;
   padding-left: 3%;
 }

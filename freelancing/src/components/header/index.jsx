@@ -3,6 +3,21 @@ import style from "./header.module.scss";
 import Button from "../../components/buttons";
 import Frame from "../../assets/images/headertag.jpeg";
 import { NavLink } from "react-router-dom";
+import LoginPage from "../loginform";
+
+import img from "../../assets/images/salary.png";
+import bell from "../../assets/images/bell.png";
+
+import Clock from "../../assets/svgg/clock";
+import Job from "../../assets/svgg/job";
+import Applicant from "../../assets/svgg/applicant";
+import Candidate from "../../assets/svgg/candidate";
+import Package from "../../assets/svgg/package";
+import Messege from "../../assets/svgg/messeges";
+import Meeting from "../../assets/svgg/meeting";
+import Company from "../../assets/svgg/company";
+import Setting from "../../assets/svgg/setting";
+import Logout from "../../assets/svgg/logout";
 
 const pagesitem = [
   {
@@ -23,7 +38,6 @@ const pagesitem = [
   {
     text: "All Categories",
   },
-
   {
     text: "Carrer",
   },
@@ -40,23 +54,17 @@ const pagesitem = [
     text: "Coming Soon",
   },
 ];
-const tabsData = [
-  {
-    id: 1,
-    title: "Job Categories",
-    content: "first erat volutpat. Donec .",
-  },
-  {
-    id: 2,
-    title: "Company Categories",
-    content: " nulla iacpendbia.",
-  },
-];
-const Nav = () => {
-  const [opencompany, setOpencompany] = useState(false)
+
+const Nav = ({ mainheader, headerbutonsettiing, activeimg }) => {
+
+  const [opencompany, setOpencompany] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [active, setActive] = useState(false);
-  const [activeTab, setActiveTab] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+ 
+
+  const formData = JSON.parse(localStorage.getItem("signInData"));
+  const formSignupData = JSON.parse(localStorage.getItem("signupData"));
 
   const handleMouseEnter = () => {
     setShowOptions(true);
@@ -80,56 +88,37 @@ const Nav = () => {
   const Mouseout = () => {
     setOpencompany(false);
   };
-  const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
+
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
     <>
-        
-      <div className={style.main1}>
-    
+      <div className={`${style.main1} ${mainheader}`}>
         <div className={style.main}>
-          <img src={Frame} alt="" className={style.logoimg} />
-          <div style={{ display: "flex" }}>
+          {activeimg && (
+            <div>
+              <img src={Frame} alt="" className={style.logoimg} />
+            </div>
+          )}
+          <div style={{ display: "flex", width: "100%" }}>
             <div className={style.link}>
               <div className={style.companyLink}>
                 <NavLink to="/" className={style.name}>
                   Home
                 </NavLink>
               </div>
-              <div
-                className={style.companyLink}
-                onMouseEnter={MouseEnter}
-                onMouseLeave={MouseLeave}
-              >
+
+              <div className={style.companyLink}>
                 <a href="/cats" className={style.name}>
                   Cats
                 </a>
-                {active && (
-                  <div
-                    className={style.optionBox}
-                    onMouseEnter={MouseEnter}
-                    onMouseLeave={MouseLeave}
-                  >
-                    {tabsData.map((tab, index) => (
-                      <div
-                        className={`${style.titlee} ${
-                          activeTab === index ? style.activeTab : ""
-                        }`}
-                        key={index}
-                      >
-                        <h3
-                          onClick={() => handleTabClick(index)}
-                          className={style.h3}
-                        >
-                          {tab.title}
-                        </h3>
-                      </div>
-                    ))}
-                    <p className={style.para}>{tabsData[activeTab]?.content}</p>
-                  </div>
-                )}
               </div>
               <a href="/jobs" className={style.name}>
                 Jobs
@@ -139,10 +128,10 @@ const Nav = () => {
                 onMouseEnter={Mousein}
                 onMouseLeave={Mouseout}
               >
-              <a href="/candidates" className={style.name}>
-                Companies             
-              </a>
-              {opencompany && (
+                <a href="/candidates" className={style.name}>
+                  Companies
+                </a>
+                {opencompany && (
                   <div
                     className={style.optionsBox}
                     onMouseEnter={Mousein}
@@ -151,13 +140,13 @@ const Nav = () => {
                     <NavLink className={style.nam} to="/company">
                       International jobs
                     </NavLink>
-                   
                   </div>
                 )}
               </div>
-              <a href="/candidates" className={style.name}>
+              <NavLink to="/candidates" className={style.name}>
                 Candidates
-              </a>
+              </NavLink>
+
               <div
                 className={style.companyLink}
                 onMouseEnter={handleMouseEnter}
@@ -184,7 +173,7 @@ const Nav = () => {
                       </p>
                     ))}
 
-                    <NavLink className={style.nam} to="/page404">
+                    <NavLink className={style.name} to="/page404">
                       Page 404
                     </NavLink>
                   </div>
@@ -199,14 +188,58 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <div className={style.buton}>
-          <Button
-            title={"Login"}
-            btndiv={style.butondiv}
-            btnClass={style.btn}
-          />
-          <Button title={"Post a Job"} btndiv={style.butondiv} />
-        </div>
+
+         {formData &&
+          <div className={style.divheadersetting}>
+            <img src={bell} alt="" style={{ width: "30px" }} />
+
+            <div
+              // className={style.dietting}
+              onMouseEnter={MouseEnter}
+              onMouseLeave={MouseLeave}
+            >
+              <div   className={style.dietting}>
+              <img src={img} alt="" style={{ width: "30px" }} />
+              <p className={style.pname}>{formSignupData.fname}</p>
+              </div>
+              {active && (
+              <div 
+              className={style.optionBox}
+              onMouseEnter={MouseEnter}
+              onMouseLeave={MouseLeave}
+              >
+             <Clock />
+            <Job />
+            <Applicant />
+            <Candidate />
+            <Package />
+            <Messege />
+            <Meeting />
+            <Company />
+            <Setting />
+            <Logout />
+              </div>
+              )} 
+            </div>
+            <Button title={"Post a Job"} btndiv={style.bundiv} />
+          </div>
+          } 
+          {!formData &&
+          <div className={`${style.buton} ${headerbutonsettiing}`}>
+            <Button
+              title={"Login"}
+              btndiv={style.butondiv}
+              btnClass={style.btn}
+              onClick={openModal}
+            />
+            <LoginPage
+              isOpen={isModalOpen}
+              onClose={closeModal}
+             
+            />
+            <Button title={"Post a Job"} btndiv={style.butondiv} />
+          </div>
+            }
       </div>
     </>
   );

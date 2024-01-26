@@ -6,6 +6,7 @@
 }
 .text {
   @include fonth6;
+  color: #111111 !important;
 }
 .changetext {
   @include fonth1;
